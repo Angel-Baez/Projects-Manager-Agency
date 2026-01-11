@@ -1,0 +1,27 @@
+{
+  "name": "projects-manager-agency",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Multi-tenant project management platform for agencies",
+  "scripts": {
+    "dev": "pnpm --parallel -r dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "type-check": "pnpm -r type-check",
+    "db:generate": "pnpm --filter @pma/database db:generate",
+    "db:migrate": "pnpm --filter @pma/database db:migrate",
+    "db:studio": "pnpm --filter @pma/database db:studio",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.15.0"
+}
